@@ -12,19 +12,18 @@ $(window).scroll(function(event){
   }
 });
 
-$(window).resize(function() {
-  if($(window).width()<768){
-    $(".skill-bar .content").collapse('show');
-  }else{
-    $(".skill-bar .content").collapse('hide');
-    $(".skill-bar").mouseover(function(){
-      $(this).find(".content").collapse('show');
-    });
-    $(".skill-bar").mouseout(function(){
-      $(this).find(".content").collapse('hide');
-    });
-  }
-});
+if($(window).width()<768){
+  $(".skill-bar .content").collapse('show');
+}else{
+  $(".skill-bar .content").collapse('hide');
+  $(".skill-bar").mouseover(function(){
+    $(this).find(".content").collapse('show');
+  });
+  $(".skill-bar").mouseout(function(){
+    $(this).find(".content").collapse('hide');
+  });
+}
+
 
 $("#backToTop").click(function(){
   $("html,body").animate({
