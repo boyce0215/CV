@@ -103,7 +103,7 @@ nav.navbar .navbar-toggle .icon-bar {
 }
 
 header {
-  background-image: url(http://soso.lionfree.net/images/bg.jpg);
+  background-image: url(../images/bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 0;
